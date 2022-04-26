@@ -22,7 +22,7 @@ function ShoppingList(props) {
     axios.get(baseURL + "users/").then((response) => {
       setState(response.data)
     })
-  })
+  }, [])
 
   if (!state) return null;
 
